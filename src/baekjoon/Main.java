@@ -9,9 +9,14 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		int X = scan.nextInt();
 		int N = scan.nextInt();
+		int total = 0;
 		for(int i=1; i<=N; i++) {
-			System.out.println("미연 바보");
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			total += a * b;
 		}
+		
+		System.out.println(X == total ? "Yes" : "No");
 	}
 
 }
